@@ -1,0 +1,354 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(165, 244, 120);
+    align-items: center;
+    
+}
+header, main{
+    margin: 2rem;
+    margin-top: 0rem;
+}
+
+
+
+footer{
+    margin: auto;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.734);
+}
+footer ul{
+    margin: 0.5rem;
+    align-items: baseline;
+    list-style: none;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+
+nav ul{
+    background-color: rgba(0, 0, 0, 0.864);
+    border: 5px rgb(251, 9, 9) dotted;
+    text-decoration: none;
+    list-style: none;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.invertir-h{
+    transform: scaleX(-1);
+}
+.invertir-y{
+    transform: scaleY(-1);
+}
+.center{
+    text-align: center;
+}
+.left{
+    text-align: left;
+}
+.right{
+    text-align: right;
+}
+.down{
+    text-align: end;
+}
+.up{
+    text-align: start;
+}
+.border{
+    border: 4px rgb(0, 0, 0) dotted;
+}
+.big-img{
+    width: 100%;
+    height: 100%;
+}
+.medium-img{
+    width: 50%;
+    height: 50%;
+}
+.small-img{
+    width: 10%;
+    height: 10%;
+}
+.small-text{
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.small-text-right{
+    display: flex;
+    justify-content: right;
+}
+
+
+.navbar-link{
+    display: inline-block;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 1rem 5rem;
+    text-decoration: none;
+}
+.navbar img{
+    width: 4rem;
+    border-radius: 50%;
+}
+.navbar-link:hover{
+    background-color: rgb(85, 85, 85);
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.393);
+    transform: translateY(-8%);
+}
+.navbar img:hover{
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.393);
+    transform: translateY(-4%);
+}
+
+
+.fontcomun{
+    font-family: 'Shantell Sans', cursive;
+}
+
+
+
+.button-up{
+    position: fixed;
+    bottom: 2rem;
+    left: 95%;
+}
+.button-up img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+}
+.container{
+    width: 100%;
+    margin: 1.3rem;
+}
+.card{
+    height: 500px;
+    overflow: hidden;
+    background: rgb(161, 250, 109);
+    border-radius: 0.5rem;
+    border: black solid 2px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: all 400ms ease;
+    cursor: default;
+}
+.card:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+.card-img{
+    width: 100%;
+    height: 210px;
+    padding-top: 1rem;
+    border-radius: 15%;
+    padding: 1rem 1rem;
+}
+.portfolio-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15%;
+    padding: 1rem;
+}
+.card-text{
+    padding: 1.6rem;
+    text-align: center;
+    line-height: 1.5;
+    color: grey;
+}
+.card a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    margin-top: 10px;
+    color: rgb(48, 183, 207);
+    border: 1px solid rgb(48, 183, 207);
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+.card a:hover{
+    background: rgb(48, 183, 207);
+    color: white;
+}
+.card-about-img{
+    display: flex;
+    flex-direction: column;
+}
+.card-duble-img{
+    height: 500px;
+    background: rgb(161, 250, 109);
+    border-radius: 0.5rem;
+    border: black solid 2px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: all 400ms ease;
+    cursor: default;
+    display: flex;
+}
+.card-duble-img:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+.card-img-right{
+    width: 60%; 
+    height: 70%; 
+    margin-top: -260px; 
+    margin-left: 400px;
+    border-radius: 15%;
+}
+.card-img-right:hover{
+    transform: scale(1.1);
+    transition: all 400ms ease;
+}
+.card-img-major{
+    width: auto; 
+    height: auto;
+    border-radius: 10%;
+    padding: 1rem 4rem;
+}
+.card-img-major:hover{
+    transform: scale(1.1);
+    transition: all 400ms ease;
+}
+.card-duble-text{
+    padding: 1.8rem;
+    text-align: center;
+    line-height: 1.5;
+    font-size: large;
+    color: grey;
+    border: 5px solid rgb(0, 0, 0);
+}
+
+
+.form-contact{
+    max-width: 600px;
+    margin: auto;
+    margin-top: 2rem;
+    padding: 2rem;
+    background: rgb(161, 250, 109);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    border: black solid 2px;
+    transition: all 400ms ease;
+    text-align: center;
+}
+.form-contact:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+.form-contact h2{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.form-contact .form-group{
+    margin-bottom: 1rem;
+}
+.form-contact input[type="text"],
+.form-contact input[type="email"],
+.form-contact textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid rgb(48, 183, 207);
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+.form-contact textarea{
+    height: 200px;
+}
+.form-contact input[type="submit"]{
+    width: 50%;
+    padding: 0.5rem;
+    color: rgb(48, 183, 207);
+    background: white;
+    border: 1px solid rgb(48, 183, 207);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+.form-contact input[type="submit"]:hover{
+    background: rgb(48, 183, 207);
+    color: white;
+}
+.form-contact input[type="reset"]{
+    width: 50%;
+    padding: 0.5rem;
+    color: rgb(48, 183, 207);
+    background: white;
+    border: 1px solid rgb(48, 183, 207);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+.form-contact input[type="reset"]:hover{
+    background: rgb(48, 183, 207);
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 785px){
+    nav ul{
+        flex-direction: column;
+    }
+    .navbar-link{
+        margin: 10px 0px;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .button-up{
+        left: 80%;
+    }
+    footer{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1290px){
+    .card-duble-img{
+        overflow: auto;
+    }
+    .card-duble-img{
+        flex-direction: column;
+    }
+    .card-img-right{
+        margin-left: 35%;
+        margin-top: -20%;
+    }
+}
