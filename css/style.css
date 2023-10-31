@@ -181,7 +181,7 @@ footer ul{
     width: 60%; 
     height: 70%; 
     margin-top: -260px; 
-    margin-left: 400px;
+    margin-left: 360px;
     border-radius: 15%;
 }
 .card-img-right:hover{
@@ -318,6 +318,12 @@ footer ul{
     footer{
         flex-direction: column;
     }
+    .small-text{
+        width: 100%;
+    }
+    .small-text-right{
+        width: 100%;
+    }
 }
 
 @media (max-width: 1290px){
@@ -328,7 +334,7 @@ footer ul{
         flex-direction: column;
     }
     .card-img-right{
-        margin-left: 35%;
-        margin-top: -20%;
+        margin-left: 45%;
+        margin-top: -30%;
     }
 }
