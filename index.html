@@ -24,9 +24,9 @@
                 </button>
 
 
-                <div class="collapse navbar-collapse" id="navbarText">
+                <div class="collapse navbar-collapse row " id="navbarText">
 
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 col align-self-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="./pages/portafolio.html">Portafolio</a>
                         </li>
@@ -35,11 +35,16 @@
                         </li>
                     </ul>
 
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <a href="./index.html"><img src="./multimedia/img/logo.png" alt="logo"></a>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 col align-self-center flex-column ">
+                        <div class="align-self-center justify-content-center ">
+                            <li>
+                                <a href="./index.html"><img src="./multimedia/img/logo.png" alt="logo"></a>
+                                <a class="img-logo" href="./index.html">Home</a>
+                            </li>
+                        </div>
                     </ul>
 
-                    <ul class="navbar-nav me-4 mb-2 mb-lg-0">
+                    <ul class="navbar-nav me-4 mb-2 mb-lg-0 col justify-content-end">
                         <li class="nav-item">
                             <a class="nav-link" href="./pages/contact.html">Contacto</a>
                         </li>
@@ -67,7 +72,11 @@
                     <div class="card-text">
                         <h2>Yo</h2>
                         <p>Soy un desarrollador web, me llamo Leandro Garro y sigo estudiando</p>
-                        <a href="#">leer mas</a>
+                        <a data-bs-toggle="collapse" href="#yo-leer-mas" role="button" aria-expanded="false" aria-controls="estudios-leer-mas" href="#">leer mas</a>
+
+                        <div class="collapse" id="yo-leer-mas">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur minus neque expedita fugit maxime ut obcaecati ratione inventore est, illum excepturi numquam beatae quos quisquam nihil dolorum libero. Ducimus, veniam.
+                        </div>
                     </div>
                 </div>
             </div>
@@ -80,11 +89,11 @@
                     <div class="card-text">
                         <h2>Estudios</h2>
                         <p>actualmente estoy estudiando desarrollo web, especializandome en Backend y aunque no haya terminado todavia la secundaria no es algo que me detengo</p>
-                        <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" href="#">leer mas</a>
+                        <a data-bs-toggle="collapse" href="#estudios-leer-mas" role="button" aria-expanded="false" aria-controls="estudios-leer-mas" href="#">leer mas</a>
 
-                        <div class="collapse" id="collapseExample">
+                        <div class="collapse" id="estudios-leer-mas">
                               Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                          </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -149,36 +158,27 @@
     <footer class="text-center text-white row" style="background-color: rgba(0, 0, 0, 0.606);">
         <div class="container pt-4">
           <section class="mb-4">
-            <!-- Facebook -->
-            <a
-              class="btn btn-link btn-floating btn-lg text-dark m-1"
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1"
               href="https://www.facebook.com/profile.php?id=100011235213802&locale=es_LA"
               role="button"
               data-mdb-ripple-color="dark"><img class="small-img" src="./multimedia/img/facebook-logo.png" alt="logo de facebook"></a>
       
-            <!-- Twitter -->
-            <a
-              class="btn btn-link btn-floating btn-lg text-dark m-1"
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1"
               href="https://twitter.com/Leandro1garro"
               role="button"
               data-mdb-ripple-color="dark"><img class="small-img" src="./multimedia/img/twitter-logo.png" alt="logo de twitter"></a>
 
-            <!-- Instagram -->
-            <a
-              class="btn btn-link btn-floating btn-lg text-dark m-1"
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1"
               href="https://www.instagram.com/leandro_garro365/"
               role="button"
               data-mdb-ripple-color="dark"><img class="small-img" src="./multimedia/img/instagram-logo.png" alt="logo de instagram"></a>
       
-            <!-- Linkedin -->
-            <a
-              class="btn btn-link btn-floating btn-lg text-dark m-1"
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1"
               href="https://www.linkedin.com/in/leandro-garro-723855294/"
               role="button"
               data-mdb-ripple-color="dark"><img class="small-img" src="./multimedia/img/linkedin-logo.png" alt="logo de linkedin"></a>
-            <!-- Github -->
-            <a
-              class="btn btn-link btn-floating btn-lg text-dark m-1"
+
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1"
               href="https://github.com/LeanGarro"
               role="button"
               data-mdb-ripple-color="dark"><img class="small-img" src="./multimedia/img/github-logo.png" alt="logo de github"></a>
