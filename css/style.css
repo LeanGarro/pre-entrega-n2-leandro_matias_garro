@@ -358,6 +358,7 @@ footer ul{
     body{
         padding: auto;
         width: 100%;
+
     }
     footer and header{
         flex-direction: column;
