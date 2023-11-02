@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 body{
     background-color: rgb(165, 244, 120);
@@ -119,7 +120,7 @@ footer ul{
 }
 .container{
     width: 100%;
-    margin: 1.3rem;
+    margin: 1rem;
 }
 .card{
     height: 500px;
@@ -192,6 +193,7 @@ footer ul{
     margin-top: -260px; 
     margin-left: 360px;
     border-radius: 15%;
+    padding-right: 3.5rem;
 }
 .card-img-right:hover{
     transform: scale(1.1);
@@ -214,6 +216,7 @@ footer ul{
     font-size: large;
     color: grey;
     border: 5px solid rgb(0, 0, 0);
+    overflow: auto;
 }
 .carrucel-img{
     height: 350px;
@@ -353,8 +356,15 @@ footer ul{
         padding-left: 10%;
     }
 }
-
 @media (max-width: 320px){
+    .cards{
+        padding-right: 1rem;
+        margin-left: -1rem;
+    }
+}
+
+
+@media (max-width: 620px){
     body{
         padding: auto;
         width: 100%;
@@ -363,5 +373,8 @@ footer ul{
     footer and header{
         flex-direction: column;
     }
-
+    .cards{
+        padding-right: 2rem;
+        margin-left: -2rem;
+    }
 }
