@@ -94,6 +94,7 @@ header{
     border-radius: 50%;
 }
 
+
 .cards{
     display: flex;
     justify-content: space-between;
@@ -154,7 +155,7 @@ header{
     flex-direction: column;
 }
 .card-duble-img{
-    height: 500px;
+    max-height: 900px;
     background: rgb(161, 250, 109);
     border-radius: 0.5rem;
     border: black solid 2px;
@@ -162,6 +163,7 @@ header{
     transition: all 400ms ease;
     cursor: default;
     display: flex;
+    
 }
 .card-duble-img:hover{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
@@ -170,10 +172,10 @@ header{
 .card-img-right{
     width: 60%; 
     height: 70%; 
-    margin-top: -260px; 
-    margin-left: 250px;
+    margin-top: -100px; 
+    margin-left: 185px;
     border-radius: 15%;
-    padding-right: 2rem;
+    margin-right: 200px;
 }
 .card-img-right:hover{
     transform: scale(1.1);
@@ -183,7 +185,7 @@ header{
     width: auto; 
     height: auto;
     border-radius: 10%;
-    padding: 1rem 4rem;
+    padding: 1rem 2rem;
 }
 .card-img-major:hover{
     transform: scale(1.1);
@@ -317,7 +319,7 @@ header{
 
 @media (max-width: 1290px){
     .card-duble-img{
-        overflow: auto;
+        overflow:visible;
     }
     .card-duble-img{
         flex-direction: column;
