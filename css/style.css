@@ -19,24 +19,6 @@ header{
 
 
 
-
-footer{
-    margin: auto;
-    text-align: center;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.734);
-}
-footer ul{
-    margin: 0.5rem;
-    align-items: baseline;
-    list-style: none;
-    display: flex;
-    justify-content:space-evenly;
-}
-
-
-
-
 .invertir-h{
     transform: scaleX(-1);
 }
@@ -112,13 +94,11 @@ footer ul{
     border-radius: 50%;
 }
 
-
-
 .cards{
     display: flex;
     justify-content: space-between;
 }
-.container{
+.container-css{
     width: 100%;
     margin: 1rem;
 }
@@ -191,9 +171,9 @@ footer ul{
     width: 60%; 
     height: 70%; 
     margin-top: -260px; 
-    margin-left: 360px;
+    margin-left: 250px;
     border-radius: 15%;
-    padding-right: 3.5rem;
+    padding-right: 2rem;
 }
 .card-img-right:hover{
     transform: scale(1.1);
@@ -327,9 +307,6 @@ footer ul{
     .button-up{
         left: 80%;
     }
-    footer{
-        flex-direction: column;
-    }
     .small-text{
         width: 100%;
     }
@@ -370,7 +347,7 @@ footer ul{
         width: 100%;
 
     }
-    footer and header{
+    header{
         flex-direction: column;
     }
     .cards{
