@@ -93,7 +93,6 @@ header{
     height: 60px;
     border-radius: 50%;
 }
-.card-container
 
 .cards{
     display: flex;
@@ -101,7 +100,7 @@ header{
 }
 .container-css{
     width: 100%;
-    margin: 1rem; //atencionnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn//
+    margin: 1rem;
 }
 .card{
     height: 500px;
