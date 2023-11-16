@@ -1,0 +1,108 @@
+@import 'utils.scss';
+@import 'cards.scss';
+@import 'forms.scss';
+@import 'navbar.scss';
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: $color-principal;
+    align-items: center;
+    font-family: 'Shantell Sans', cursive;
+}
+
+main{
+    margin: 2rem;
+    margin-top: 0rem;
+}
+
+header{
+    text-align: center;
+}
+
+.button-up{
+    position: fixed;
+    bottom: 2rem;
+    left: 95%;
+    img{
+        width: 60px;
+        border-radius: 50%;
+    }
+}
+
+
+
+
+@media screen and(max-width: 1000px){
+        nav ul{
+            flex-direction: column;
+        }
+        .navbar-link{
+            margin: 10px 0px;
+        }
+        .cards{
+            flex-direction: column;
+        }
+        .button-up{
+            left: 90%;
+        }
+        .small-text{
+            width: 100%;
+        }
+        .small-text-right{
+            width: 100%;
+        }
+}
+
+@media screen and(max-width: 1290px){
+    .card-duble-img{
+        overflow:visible;
+    }
+    .card-duble-img{
+        flex-direction: column;
+    }
+    .card-img-right{
+        margin-left: 45%;
+        margin-top: -30%;
+    }
+}
+
+@media screen and(min-width: 420px) and (max-width:720px){
+    .card-container{
+        padding-left: 10%;
+    }
+    .button-up{
+        left: 80%;
+    }
+}
+@media screen and(max-width: 320px){
+    .cards{
+        padding-right: 1rem;
+        margin-left: -1rem;
+    }
+    .button-up{
+        left: 70%;
+    }
+}
+
+@media screen and(max-width: 620px){
+    body{
+        padding: auto;
+        width: 100%;
+
+    }
+    header{
+        flex-direction: column;
+    }
+    .cards{
+        padding-right: 0.5rem;
+        margin-left: 0.2rem;
+    }
+}

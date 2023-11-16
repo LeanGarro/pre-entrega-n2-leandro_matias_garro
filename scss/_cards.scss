@@ -1,0 +1,125 @@
+.container-css{
+    width: 100%;
+    margin: 1rem;
+    padding-right: 3rem;
+
+    .card-duble-img{
+        display: flex;
+        max-height: 900px;
+        background: rgb(161, 250, 109);
+        border-radius: 0.5rem;
+        border: black solid 2px;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+        transition: all 400ms ease;
+        cursor: default;
+
+        &:hover{
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+            transform: translateY(-3%);
+        }
+
+        .card-duble-text{
+            padding: 1.8rem;
+            text-align: center;
+            line-height: 1.5;
+            font-size: large;
+            color: grey;
+            border: 5px solid rgb(0, 0, 0);
+            overflow: auto;
+        }
+
+        .card-about-img{
+            @include flex(column, center);
+
+            .card-img-major{
+                width: auto; 
+                height: auto;
+                border-radius: 10%;
+                padding: 1rem 2rem;
+
+                &:hover{
+                    transform: scale(1.1);
+                    transition: all 400ms ease;
+                }
+            }
+            .card-img-right{
+                width: 60%; 
+                height: 70%; 
+                margin-top: -100px; 
+                margin-left: 185px;
+                border-radius: 15%;
+                margin-right: 200px;
+
+                &:hover{
+                    transform: scale(1.1);
+                    transition: all 400ms ease;
+                }
+            }
+        }
+    }
+}
+
+
+
+.cards{
+    @include flex(row, space-between);
+    .card{
+        height: 500px;
+        overflow: auto;
+        background: #a1fa6d;
+        border-radius: 0.5rem;
+        border: black solid 2px;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+        transition: all 400ms ease;
+
+        &:hover{
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+            transform: translateY(-3%);
+        }
+
+        a{
+            display: inline-block;
+            text-decoration: none;
+            padding: 0.6rem 1rem;
+            margin-top: 10px;
+            color: rgb(48, 183, 207);
+            border: 1px solid rgb(48, 183, 207);
+            border-radius: 4px;
+            transition: all 400ms ease;
+
+            &:hover{
+                background-color: rgb(48, 183, 207);
+                color: white;
+            }
+        }
+
+        .carrusel-img{
+            height: 350px;
+            width: auto;
+            padding: 0.5rem;
+        }
+
+        .card-img{
+            width: 100%;
+            height: 210px;
+            padding-top: 1rem;
+            border-radius: 15%;
+            padding: 1rem 1rem;
+        }
+
+        .portfolio-img{
+            width: 100%;
+            height: 100%;
+            border-radius: 15%;
+            padding: 1rem;
+        }
+        .card-text{
+            padding: 1.6rem;
+            text-align: center;
+            line-height: 1.5;
+            color: grey;
+        }
+
+    }
+    
+}
