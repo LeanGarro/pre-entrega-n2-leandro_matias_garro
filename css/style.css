@@ -47,6 +47,55 @@
 .fontcomun {
   font-family: 'Shantell Sans', cursive; }
 
+.invertir-h {
+  transform: scaleX(-1); }
+
+.invertir-y {
+  transform: scaleY(-1); }
+
+.center {
+  text-align: center; }
+
+.left {
+  text-align: left; }
+
+.right {
+  text-align: right; }
+
+.down {
+  text-align: end; }
+
+.up {
+  text-align: start; }
+
+.border {
+  border: 4px black dotted; }
+
+.big-img {
+  width: 100%;
+  height: 100%; }
+
+.medium-img {
+  width: 50%;
+  height: 50%; }
+
+.small-img {
+  width: 15%;
+  height: 15%; }
+
+.small-text {
+  width: 40%;
+  height: 100%;
+  text-align: center;
+  font-size: 1.5rem; }
+
+.small-text-right {
+  display: flex;
+  justify-content: right; }
+
+.fontcomun {
+  font-family: 'Shantell Sans', cursive; }
+
 .container-css {
   width: 100%;
   margin: 1rem;
@@ -248,18 +297,20 @@ header {
 
 @media screen and (max-width: 1290px) {
   .card-duble-img {
-    overflow: visible; }
+    overflow: auto; }
   .card-duble-img {
     flex-direction: column; }
   .card-img-right {
     margin-left: 45%;
     margin-top: -30%; } }
 
-@media screen and (min-width: 420px) and (max-width: 720px) {
+@media screen and (max-width: 720px) {
   .card-container {
     padding-left: 10%; }
   .button-up {
-    left: 80%; } }
+    left: 80%; }
+  .card-img-right {
+    padding-right: 5rem; } }
 
 @media screen and (max-width: 320px) {
   .cards {

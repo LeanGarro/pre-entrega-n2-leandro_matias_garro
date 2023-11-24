@@ -63,7 +63,7 @@ header{
 
 @media screen and(max-width: 1290px){
     .card-duble-img{
-        overflow:visible;
+        overflow: auto;
     }
     .card-duble-img{
         flex-direction: column;
@@ -74,12 +74,15 @@ header{
     }
 }
 
-@media screen and(min-width: 420px) and (max-width:720px){
+@media screen and(max-width:720px){
     .card-container{
         padding-left: 10%;
     }
     .button-up{
         left: 80%;
+    }
+    .card-img-right{
+        padding-right: 5rem;
     }
 }
 @media screen and(max-width: 320px){
@@ -106,3 +109,4 @@ header{
         margin-left: 0.2rem;
     }
 }
+
