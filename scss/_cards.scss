@@ -1,5 +1,7 @@
+/* IMOPORT */
 @import 'utils.scss';
 
+/* ESTILOS DE LAS CARDS CON IMG */
 .container-css{
     width: 100%;
     margin: 1rem;
@@ -62,7 +64,7 @@
 }
 
 
-
+/* ESTILOS DE LAS CARDS */
 .cards{
     @include flex(row, space-between);
     .card{

@@ -4,16 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
     
-
+    <!-- LINK BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
+    <!-- LINK CSS -->
     <link rel="stylesheet" href="../css/style.css">
+
+    <!-- TITLE -->
     <title>lions-team | Contacto</title>
 
+    <!-- METADATAS/SEO -->
     <meta name="description" content="si quieres contactarme o a lion's company puedes hacerlo a travez de este formulario de contacto">
     <meta name="keywords" content="html, css, javascript, portafolio, programador, web, lion's, contact, form, terms-y-conds">
 </head>
@@ -21,44 +26,48 @@
 
     <header id="header">
 
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-    
-    
-                    <div class="collapse navbar-collapse row " id="navbarText">
-    
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 col align-self-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="../pages/portafolio.html">Portafolio</a>
+            <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- botones de portafolio y habilidades -->
+                <div class="collapse navbar-collapse row " id="navbarText">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 col align-self-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/portafolio.html">Portafolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/habilidades.html">Habilidades</a>
+                        </li>
+                    </ul>
+
+                    <!-- logo y boton de home -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 col align-self-center flex-column ">
+                        <div class="align-self-center justify-content-center ">
+                            <li>
+                                <a href="../index.html"><img src="../multimedia/img/logo.png" alt="logo"></a>
+                                <a class="img-logo" href="../index.html">Home</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../pages/habilidades.html">Habilidades</a>
-                            </li>
-                        </ul>
-    
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 col align-self-center flex-column ">
-                            <div class="align-self-center justify-content-center ">
-                                <li>
-                                    <a href="../index.html"><img src="../multimedia/img/logo.png" alt="logo"></a>
-                                    <a class="img-logo" href="../index.html">Home</a>
-                                </li>
-                            </div>
-                        </ul>
-    
-                        <ul class="navbar-nav me-4 mb-2 mb-lg-0 col justify-content-end">
-                            <li class="nav-item">
-                                <a class="nav-link" href="../pages/contact.html">Contacto</a>
-                            </li>
-                            <li class="nav-item ">
-                                <li><a class="nav-link" href="../pages/about.html">About</a></li>
-                            </li>
-                        </ul>
-                  </div>
-                </div>
-            </nav>
+                        </div>
+                    </ul>
+
+                    <!-- botones de contacto y about -->
+                    <ul class="navbar-nav me-4 mb-2 mb-lg-0 col justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contact.html">Contacto</a>
+                        </li>
+                        <li class="nav-item ">
+                            <li><a class="nav-link" href="../pages/about.html">About</a></li>
+                        </li>
+                    </ul>
+              </div>
+            </div>
+        </nav>
+        <!-- FIN NAVBAR -->
 
         <section>
             <h1 class="center">📧 Contacto 📧</h1>
@@ -67,45 +76,55 @@
 
     <main>
 
-
+        <!-- CARD FORM -->
         <form class="form-contact" action="">
+            <!-- CAMPO NOMBRE COMPLETO -->
             <div>
                 <label for="complete-name">Nombre completo</label>
                 <input type="text" name="name" placeholder="Ingresa tu nombre" required>
             </div>
+            <!-- CAMPO EMAIL -->
             <div>
                 <label for="email">Email</label>
                 <input type="email" name="email" placeholder="Ingresa tu email" required>
             </div>
+            <!-- CAMPO TELEFONO -->
             <div>
                 <label for="text">GitHub</label>
                 <input type="text" name="github-name" placeholder="Ingresa tu usuario de GitHub" required>
             </div>
+            <!-- CAMPO MENSAJE -->
             <div>
                 <label for="message">Mensaje</label>
                 <textarea name="message" id="" cols="30" rows="10" maxlength="350" placeholder="Ingresa tu mensaje" required></textarea>
             </div>
+            <!-- CAMPO CHECK -->
             <div>
                 <label for="boolean">aceptar <a href="./terms-y-conds.html">Terminos y Condiciones</a></label>
                 <input type="checkbox" name="terminos" required>
             </div><br>
+            <!-- BOTONES DE ENVIAR Y BORRAR -->
             <div>
                 <input type="submit" value="Enviar">
                 <input type="reset" value="Borrar datos">
             </div>
-
         </form>
+        <!-- FIN CARD FORM -->
 
+        <!-- BOTONES DE UP AND WHATSAPP -->
         <section class="button-up">
             <a href="https://www.whatsapp.com" target="_blank"><img src="../multimedia/img/whatsapp.png" alt="whatsapp"></a>
         </section>
+        <!-- FIN BOTONES DE UP AND WHATSAPP -->
 
     </main>
 
+    <!-- FOOTER -->
     <footer class="text-white" style="background-color: rgba(0, 0, 0, 0.606);">
         <div class="container pt-4">
           <section class="mb-4 row">
 
+            <!-- columna 1 facebook y instagram -->
             <div class="col-6">
                 <a class="btn btn-link btn-floating btn-lg text-dark m-1"
                   href="https://www.facebook.com/profile.php?id=100011235213802&locale=es_LA"
@@ -118,6 +137,7 @@
                   data-mdb-ripple-color="dark"><img class="small-img" src="../multimedia/img/instagram-logo.png" alt="logo de instagram"></a>
             </div>
             
+            <!-- columna 2 linkedin y github -->
             <div class="col-6">
                 <a class="btn btn-link btn-floating btn-lg text-dark m-1"
                   href="https://www.linkedin.com/in/leandro-garro-723855294/"
@@ -132,10 +152,13 @@
 
           </section>
         </div>
+
+        <!-- Copyright -->
         <div class="text-center text-light p-3" style="background-color: rgba(0, 0, 0, 0.2);">© 2020 Copyright:
           <a class="text-light" href="#!">Lion's company</a>
         </div>
       </footer>
+      <!-- FIN FOOTER -->
  
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

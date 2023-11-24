@@ -1,3 +1,4 @@
+/* IMOPORTS */
 .invertir-h {
   transform: scaleX(-1); }
 
@@ -47,6 +48,7 @@
 .fontcomun {
   font-family: 'Shantell Sans', cursive; }
 
+/* IMOPORT */
 .invertir-h {
   transform: scaleX(-1); }
 
@@ -96,6 +98,7 @@
 .fontcomun {
   font-family: 'Shantell Sans', cursive; }
 
+/* ESTILOS DE LAS CARDS CON IMG */
 .container-css {
   width: 100%;
   margin: 1rem;
@@ -143,6 +146,7 @@
           transform: scale(1.1);
           transition: all 400ms ease; }
 
+/* ESTILOS DE LAS CARDS */
 .cards {
   display: flex;
   justify-content: space-between;
@@ -255,6 +259,7 @@
   font-size: 2rem;
   display: flex; }
 
+/* ESTILOS GENERALES */
 * {
   margin: 0;
   padding: 0;
@@ -281,6 +286,7 @@ header {
     width: 60px;
     border-radius: 50%; }
 
+/* MEDIA QUERIES */
 @media screen and (max-width: 1000px) {
   nav ul {
     flex-direction: column; }

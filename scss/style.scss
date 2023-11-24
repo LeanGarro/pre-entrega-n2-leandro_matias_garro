@@ -1,10 +1,11 @@
+/* IMOPORTS */
 @import 'utils.scss';
 @import 'cards.scss';
 @import 'forms.scss';
 @import 'navbar.scss';
 
 
-
+/* ESTILOS GENERALES */
 *{
     margin: 0;
     padding: 0;
@@ -27,6 +28,7 @@ header{
     text-align: center;
 }
 
+
 .button-up{
     position: fixed;
     bottom: 2rem;
@@ -39,7 +41,7 @@ header{
 
 
 
-
+/* MEDIA QUERIES */
 @media screen and(max-width: 1000px){
         nav ul{
             flex-direction: column;
